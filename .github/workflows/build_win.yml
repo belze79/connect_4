@@ -26,7 +26,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller --noconfirm --clean --onefile f4_main.py --paths . --hidden-import=pyinstaller_import
+          pyinstaller --noconfirm --clean --onefile f4_main.py --name connect_4 --paths . --hidden-import=pyinstaller_import
 
 
       - name: Upload EXE
