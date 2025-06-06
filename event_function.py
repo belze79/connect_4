@@ -1,7 +1,5 @@
 from tkinter import Event, Label
-
-from forza4.ui_function import reset_canvas_and_info
-from ui_function import change_info_text, change_state_button, switch_play_restart_button, set_table_enabled, redraw_canvas
+from ui_function import change_info_text, change_state_button, switch_play_restart_button, set_table_enabled, redraw_canvas, reset_canvas_and_info
 from game_data_handler import game_data, player, bot, get_cell_by_click, is_valid_free_cell
 from animation import token_falling_down, after_animation
 import f4_session_store as store
