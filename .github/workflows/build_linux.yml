@@ -32,5 +32,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: linux-build
+          name: connect4_ubuntu_24_04
           path: dist/connect_4
