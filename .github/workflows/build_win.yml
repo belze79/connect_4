@@ -25,7 +25,8 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller f4_main.py --onefile --name connect4
+          pyinstaller --noconfirm --clean --onefile f4_main.py --paths . --hidden-import PIL._tkinter_finder
+
 
       - name: Upload EXE
         uses: actions/upload-artifact@v4
