@@ -25,7 +25,7 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          pyinstaller --onefile f4_main.py
+          pyinstaller --noconfirm --clean --onefile f4_main.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
